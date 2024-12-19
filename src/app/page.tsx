@@ -8,6 +8,7 @@ import AboutEvent from "./about-event";
 import OurStats from "./our-stats";
 import EventContent from "./event-content";
 import Faq from "./faq";
+import React from "react";
 
 export default function Portfolio() {
   return (

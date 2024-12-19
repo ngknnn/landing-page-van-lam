@@ -23,7 +23,10 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+      <Typography
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -38,18 +41,18 @@ function NavItem({ children, href }: NavItemProps) {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "NVT Production House",
     icon: RectangleStackIcon,
   },
-  {
-    name: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    name: "Docs",
-    icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
-  },
+  // {
+  //   name: "Account",
+  //   icon: UserCircleIcon,
+  // },
+  // {
+  //   name: "Docs",
+  //   icon: CommandLineIcon,
+  //   href: "https://www.material-tailwind.com/docs/react/installation",
+  // },
 ];
 
 export function Navbar() {
@@ -80,7 +83,10 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+    <MTNavbar
+      placeholder={undefined}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
       shadow={false}
       fullWidth
       blurred={false}
@@ -88,33 +94,46 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+        <Typography
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
         >
-          Material Tailwind
+          Nguyễn Việt Thanh Production
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}
         >
-          {NAV_MENU.map(({ name, icon: Icon, href }) => (
-            <NavItem key={name} href={href}>
+          {NAV_MENU.map(({ name, icon: Icon }) => (
+            <NavItem key={name}>
               <Icon className="h-5 w-5" />
               <span>{name}</span>
             </NavItem>
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
-          <Button  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} color={isScrolling ? "gray" : "white"} variant="text">
+          {/* <Button  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} color={isScrolling ? "gray" : "white"} variant="text">
             Log in
-          </Button>
+          </Button> */}
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} color={isScrolling ? "gray" : "white"}>blocks</Button>
+            <Button
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+              color={isScrolling ? "gray" : "white"}
+            >
+              blocks
+            </Button>
           </a>
         </div>
-        <IconButton placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+        <IconButton
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
@@ -130,17 +149,31 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
-            {NAV_MENU.map(({ name, icon: Icon, href }) => (
-              <NavItem key={name} href={href}>
+            {NAV_MENU.map(({ name, icon: Icon }) => (
+              <NavItem key={name}>
                 <Icon className="h-5 w-5" />
                 {name}
               </NavItem>
             ))}
           </ul>
           <div className="mt-6 flex items-center gap-4">
-            <Button  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} variant="text">Log in</Button>
+            <Button
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+              variant="text"
+            >
+              Log in
+            </Button>
             <a href="https://www.materila-tailwind.com/blocks" target="_blank">
-              <Button placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} color="gray">blocks</Button>
+              <Button
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+                color="gray"
+              >
+                blocks
+              </Button>
             </a>
           </div>
         </div>

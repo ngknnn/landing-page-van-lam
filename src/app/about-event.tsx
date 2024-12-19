@@ -21,13 +21,30 @@ const EVENT_INFO = [
 export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
-      <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} variant="h6" className="text-center mb-2" color="orange">
+      <Typography
+        variant="h6"
+        className="text-center mb-2"
+        color="orange"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         About the event
       </Typography>
-      <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} variant="h3" className="text-center" color="blue-gray">
+      <Typography
+        variant="h3"
+        className="text-center"
+        color="blue-gray"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         Why Attend?
       </Typography>
-      <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+      <Typography
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
         variant="lead"
         className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
