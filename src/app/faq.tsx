@@ -34,31 +34,29 @@ export function Faq() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} variant="h1" color="blue-gray" className="mb-4">
-            Frequently asked questions
+          <Typography  variant="h1" color="blue-gray" className="mb-4">
+          Kỹ thuật thêu đơn sắc
           </Typography>
-          <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+          <Typography 
             variant="lead"
             className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
           >
-            Welcome to the AI Conference 2023 FAQ section. We&apos;re here to
-            address your most common queries and provide you with the
-            information you need to make the most of your conference experience.
+          Một trong những đặc sắc khác mà chỉ có ở làng thêu ren Văn Lâm là kỹ thuật thêu đơn sắc, hay thậm chí là chỉ dùng chỉ màu trắng. Tức là người thợ không dùng màu sắc tạo nên nét sinh động của bản thêu, mà trái lại, chính sự đơn sắc của vải, của chỉ làm nổi bật cái khéo léo của người thợ và nét tinh xảo của tác phẩm.
           </Typography>
         </div>
 
-        <div className="mx-auto lg:max-w-screen-lg lg:px-20">
+        {/* <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
-            <Accordion placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+            <Accordion 
               key={key}
               open={open === key + 1}
               onClick={() => handleOpen(key + 1)}
             >
-              <AccordionHeader placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} className="text-left text-gray-900">
+              <AccordionHeader  className="text-left text-gray-900">
                 {title}
               </AccordionHeader>
               <AccordionBody>
-                <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+                <Typography 
                   color="blue-gray"
                   className="font-normal text-gray-500"
                 >
@@ -67,7 +65,7 @@ export function Faq() {
               </AccordionBody>
             </Accordion>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

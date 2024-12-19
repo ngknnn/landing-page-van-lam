@@ -26,16 +26,16 @@ export function OurStats() {
   return (
     <section className="container mx-auto grid gap-10 px-8 py-44 lg:grid-cols-1 lg:gap-20 xl:grid-cols-2 xl:place-items-center">
       <div>
-        <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} variant="h6" color="orange" className="mb-6 font-medium">
+        <Typography  variant="h6" color="orange" className="mb-6 font-medium">
           Our Stats
         </Typography>
-        <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+        <Typography 
           className="text-5xl font-bold leading-tight lg:w-3/4"
           color="blue-gray"
         >
           Conference Highlights
         </Typography>
-        <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+        <Typography 
           variant="lead"
           className="mt-3 w-full !text-gray-500 lg:w-9/12"
         >

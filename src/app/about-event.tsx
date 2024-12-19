@@ -25,33 +25,24 @@ export function AboutEvent() {
         variant="h6"
         className="text-center mb-2"
         color="orange"
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+        
       >
-        About the event
+        Khu vực trải nghiệm Tranh thêu Văn Lâm
       </Typography>
       <Typography
         variant="h3"
         className="text-center"
         color="blue-gray"
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+        
       >
-        Why Attend?
+        Lịch sử hình thành?
       </Typography>
       <Typography
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+        
         variant="lead"
         className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
-        Welcome to the AI Conference 2023, where the future unfolds! Whether
-        you&apos;re a seasoned AI professional, a curious newcomer, or a
-        business leader looking to harness the power of AI, this conference is
-        designed to inspire, educate, and connect.
+        Làng nghề thêu tranh Văn Lâm nằm tại xã Ninh Hải, huyện Hoa Lư, tỉnh Ninh Bình – một vùng đất giàu truyền thống lịch sử và văn hóa, nằm bên cạnh quần thể danh thắng Tràng An, di sản thế giới được UNESCO công nhận. Với gần 1000 năm lịch sử, làng nghề Văn Lâm không chỉ là niềm tự hào của người dân Ninh Bình mà còn là biểu tượng của sự khéo léo và tinh hoa nghệ thuật thêu truyền thống Việt Nam.
       </Typography>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (

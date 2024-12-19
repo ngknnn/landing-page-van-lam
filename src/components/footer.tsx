@@ -9,18 +9,13 @@ export function Footer() {
       <div className="container flex flex-col mx-auto">
         <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5 ">
           <Typography
-            placeholder={""}
-            onPointerEnterCapture={""}
-            onPointerLeaveCapture={""}
             className="text-2xl md:text-3xl text-center font-bold "
             color="white"
           >
             Join now and get 30% OFF!
           </Typography>
           <Typography
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            
             color="white"
             className=" md:w-7/12 text-center my-3 !text-base"
           >
@@ -28,9 +23,6 @@ export function Footer() {
           </Typography>
           <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
             <Button
-              placeholder={""}
-              onPointerEnterCapture={""}
-              onPointerLeaveCapture={""}
               color="white"
               size="md"
             >
@@ -40,9 +32,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col md:flex-row items-center !justify-between">
           <Typography
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            
             as="a"
             href="https://www.material-tailwind.com"
             target="_blank"
@@ -55,9 +45,7 @@ export function Footer() {
             {LINKS.map((link, index) => (
               <li key={index}>
                 <Typography
-                  placeholder={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
+                 
                   as="a"
                   href="#"
                   variant="small"
@@ -71,9 +59,7 @@ export function Footer() {
           </ul>
           <div className="flex w-fit justify-center gap-2">
             <IconButton
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+            
               size="sm"
               color="gray"
               variant="text"
@@ -81,9 +67,7 @@ export function Footer() {
               <i className="fa-brands fa-twitter text-lg" />
             </IconButton>
             <IconButton
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+            
               size="sm"
               color="gray"
               variant="text"
@@ -91,9 +75,7 @@ export function Footer() {
               <i className="fa-brands fa-youtube text-lg" />
             </IconButton>
             <IconButton
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+             
               size="sm"
               color="gray"
               variant="text"
@@ -101,9 +83,7 @@ export function Footer() {
               <i className="fa-brands fa-instagram text-lg" />
             </IconButton>
             <IconButton
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+              
               size="sm"
               color="gray"
               variant="text"
@@ -112,10 +92,8 @@ export function Footer() {
             </IconButton>
           </div>
         </div>
-        <Typography
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+        {/* <Typography
+        
           color="blue-gray"
           className="text-center mt-12 font-normal !text-gray-700"
         >
@@ -128,7 +106,7 @@ export function Footer() {
             Creative Tim
           </a>
           .
-        </Typography>
+        </Typography> */}
       </div>
     </footer>
   );

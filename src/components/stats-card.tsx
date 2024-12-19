@@ -7,11 +7,11 @@ interface StatsCardProps {
 
 export function StatsCard({ count, title }: StatsCardProps) {
   return (
-    <Card color="transparent" shadow={false} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-      <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} variant="h1" className="font-bold" color="blue-gray">
+    <Card color="transparent" shadow={false} >
+      <Typography  variant="h1" className="font-bold" color="blue-gray">
         {count}
       </Typography>
-      <Typography placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} variant="h6" color="blue-gray" className="mt-1 font-medium">
+      <Typography  variant="h6" color="blue-gray" className="mt-1 font-medium">
         {title}
       </Typography>
     </Card>

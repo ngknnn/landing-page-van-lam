@@ -24,9 +24,7 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
-        placeholder={undefined}
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
+        
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -84,9 +82,7 @@ export function Navbar() {
 
   return (
     <MTNavbar
-      placeholder={undefined}
-      onPointerEnterCapture={undefined}
-      onPointerLeaveCapture={undefined}
+    
       shadow={false}
       fullWidth
       blurred={false}
@@ -95,9 +91,7 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+         
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
         >
@@ -116,14 +110,12 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
-          {/* <Button  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} color={isScrolling ? "gray" : "white"} variant="text">
+          {/* <Button   color={isScrolling ? "gray" : "white"} variant="text">
             Log in
           </Button> */}
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
             <Button
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+             
               color={isScrolling ? "gray" : "white"}
             >
               blocks
@@ -131,9 +123,7 @@ export function Navbar() {
           </a>
         </div>
         <IconButton
-          placeholder={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+         
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
@@ -158,18 +148,14 @@ export function Navbar() {
           </ul>
           <div className="mt-6 flex items-center gap-4">
             <Button
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+              
               variant="text"
             >
               Log in
             </Button>
             <a href="https://www.materila-tailwind.com/blocks" target="_blank">
               <Button
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
+                
                 color="gray"
               >
                 blocks
