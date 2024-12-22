@@ -87,17 +87,19 @@ export function Navbar() {
       fullWidth
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
+      className="fixed top-0 z-50 border-0 w-full"
     >
       <div className="container mx-auto flex items-center justify-between">
+      <div className="flex-1 text-center">
         <Typography
          
-          color={isScrolling ? "blue-gray" : "white"}
-          className="text-lg font-bold"
+          color={isScrolling ? "blue-gray" : "red"}
+          className="text-lg font-bold font-magistral"
         >
-          Nguyễn Việt Thanh Production
+          VIETTEL & YOU
         </Typography>
-        <ul
+        </div>
+        {/* <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}
@@ -108,11 +110,11 @@ export function Navbar() {
               <span>{name}</span>
             </NavItem>
           ))}
-        </ul>
-        <div className="hidden items-center gap-4 lg:flex">
-          {/* <Button   color={isScrolling ? "gray" : "white"} variant="text">
+        </ul> */}
+        {/* <div className="hidden items-center gap-4 lg:flex">
+          <Button   color={isScrolling ? "gray" : "white"} variant="text">
             Log in
-          </Button> */}
+          </Button>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
             <Button
              
@@ -121,8 +123,8 @@ export function Navbar() {
               blocks
             </Button>
           </a>
-        </div>
-        <IconButton
+        </div> */}
+        {/* <IconButton
          
           variant="text"
           color={isScrolling ? "gray" : "white"}
@@ -134,9 +136,9 @@ export function Navbar() {
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </IconButton>
+        </IconButton> */}
       </div>
-      <Collapse open={open}>
+      {/* <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, icon: Icon }) => (
@@ -163,7 +165,7 @@ export function Navbar() {
             </a>
           </div>
         </div>
-      </Collapse>
+      </Collapse> */}
     </MTNavbar>
   );
 }

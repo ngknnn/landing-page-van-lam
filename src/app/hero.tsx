@@ -21,7 +21,7 @@ function Hero() {
             
             variant="h1"
             color="white"
-            className="lg:max-w-4xl"
+            className="lg:max-w-4xl custom-font"
           >
             Nghệ Thuật dân gian tranh Văn Lâm
           </Typography>
